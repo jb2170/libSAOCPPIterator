@@ -5,7 +5,7 @@
 namespace SAO::Iterator {
 
   template <typename TIterable, typename TIterator>
-  IteratorFactory<TIterable, TIterator>::IteratorFactory(const TIterable &iterable) : iterable(iterable) {}
+  IteratorFactory<TIterable, TIterator>::IteratorFactory(TIterable &iterable) : iterable(iterable) {}
 
   template <typename TIterable, typename TIterator>
   TIterator IteratorFactory<TIterable, TIterator>::begin() {

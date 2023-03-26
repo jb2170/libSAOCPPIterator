@@ -4,10 +4,10 @@ namespace SAO::Iterator {
 
   template <typename TIterable, typename TState, typename TResult>
   struct Iterator {
-    const TIterable &iterable;
+    TIterable &iterable;
     TState state;
 
-    Iterator(const TIterable &iterable);
+    Iterator(TIterable &iterable);
 
     virtual ~Iterator() = default;
 

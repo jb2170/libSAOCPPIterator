@@ -12,7 +12,7 @@ namespace SAO::MyArray::Iterators::Forwards {
 
   template <size_t Size>
   struct Iterator : SAO::Iterator::Iterator<MyArray<Size>, State, Result> {
-    Iterator(const MyArray<Size> &iterable);
+    Iterator(MyArray<Size> &iterable);
 
     Result operator*();
 

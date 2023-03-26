@@ -8,7 +8,7 @@
 namespace SAO::MyArray::Iterators::Backwards {
 
   template <size_t Size>
-  Iterator<Size>::Iterator(const MyArray<Size> &iterable) : SAO::Iterator::Iterator<MyArray<Size>, State, Result>(iterable) {
+  Iterator<Size>::Iterator(MyArray<Size> &iterable) : SAO::Iterator::Iterator<MyArray<Size>, State, Result>(iterable) {
     this->state.position = Size - 1;
   }
 
